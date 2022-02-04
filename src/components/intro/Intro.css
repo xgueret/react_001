@@ -5,14 +5,22 @@
 
 .i-left {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .i-right {
     flex: 2;
+    position: relative;
 }
 
 .i-left-wrapper {
     padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .i-intro {
@@ -56,4 +64,27 @@
     color: #59b256;
     display: flex;
     align-items: center;
+}
+.i-scroll {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+}
+.i-img {
+    width: 54%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 46%;
+}
+
+.i-bg {
+    clip-path: polygon(100% 0%, 100% 55%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: #59b256;
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    top: 0;
+    right: 0;
 }
