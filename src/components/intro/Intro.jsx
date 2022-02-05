@@ -83,8 +83,7 @@ const Intro = () => {
             <div className="i-bg"></div>
             <img src={Me} alt="" className="i-img" />
         </div>
-  </div>;
-
+  </div>
 };
 
 export default Intro;

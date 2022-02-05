@@ -4,8 +4,7 @@ import Product from "../product/Product";
 import { products } from "../../data"
 
 const ProductList = () => {
-  return (
-    <div className="pl">
+  return <div className="pl">
       <div className="pl-texts">
         <h1 className="pl-title">Create & inspire. It's Lama</h1>
           <p className="pl-desc">
@@ -20,7 +19,6 @@ const ProductList = () => {
         ))}
       </div>
     </div>
-  );
 };
 
 export default ProductList;
