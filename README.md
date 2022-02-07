@@ -16,8 +16,10 @@
 
 * création d'un compte chez https://www.emailjs.com/
 
+  *rubrique integration*
+
   ```shell
-  npm install @emailjs/browser --save
+  npm install @emailjs/browser
   ```
 
   
