@@ -3,9 +3,9 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { useState } from "react/cjs/react.production.min";
+import { useState, useContext, useRef } from "react";
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
@@ -29,9 +29,11 @@ const Contact = () => {
         }
       );
   };
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   return (
-    <div className="c">
+    <div className={"c " + (darkMode && "c-dark")}>
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">

@@ -79,3 +79,9 @@ button {
   font-weight: 500;
   cursor: pointer;
 }
+
+
+.c-dark input, .c-dark textarea {
+  background-color: #333;
+  color: white;
+}
